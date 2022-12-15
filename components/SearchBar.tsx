@@ -3,7 +3,6 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 interface Props {
     userRef: any;
-    // userName: any;
     handleClick: () => void;
 }
 

@@ -14,9 +14,11 @@ export default function Avatar(props: Props) {
                     src={imageURL || Vercel}
                     width="120"
                     height="120"
-                    objectFit="cover"
                     className="rounded-full "
                     alt="github stuff"
+                    style={{
+                        objectFit: "cover",
+                    }}
                 />
             ) : (
                 <p className="text-lg font-bold font-mono text-center pt-8 text-gray-800 dark:text-gray-200">
