@@ -25,7 +25,6 @@ const Home: NextPage = () => {
         fetch(API)
             .then(res => res.json())
             .then(dataa => {
-                console.log(JSON.stringify(dataa));
                 setData(dataa);
                 setLoading(false);
             });
