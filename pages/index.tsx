@@ -7,15 +7,17 @@ import Navbar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
 
 const Home: NextPage = () => {
-    let API = "https://api.github.com/users/octocat";
-
     const [userName, setUserName] = useState("");
     const userRef = useRef<HTMLInputElement>(null);
-    const [data, setData] = useState("");
+    const [data, setData] = useState({});
     const [isLoading, setLoading] = useState(false);
 
     useEffect(() => {
+        // default api url
+        let API = "https://api.github.com/users/octocat";
+
         setLoading(true);
+
         if (userName) {
             API = `https://api.github.com/users/${userName}`;
         }
