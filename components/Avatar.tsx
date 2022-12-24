@@ -16,6 +16,7 @@ export default function Avatar(props: Props) {
                     height="120"
                     className="rounded-full "
                     alt="github stuff"
+                    priority
                     style={{
                         objectFit: "cover",
                     }}
